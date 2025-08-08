@@ -1,0 +1,166 @@
+body {
+  background-color:  #b67d5f;
+  font-family:inter, sans-serif;
+}
+
+
+
+
+header {
+  position: relative;
+  background-image: url('bakerytwo.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  width: 720px;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #FBF5DE;
+  border-radius:20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  border: 7px #432819 solid;
+}
+
+#menu {
+  width: 800px; 
+  margin: 0 auto;
+  padding-left: 7px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  display: inline-block;
+}
+
+
+article {
+  border-radius:20px;
+  border: 7px #432819 solid;
+  background-color: #FBF5DE;
+  border-radius:20px;
+  padding: 20px;
+  width:30%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.hinh {
+  width:100%;
+  height: 15em;
+  display: block;
+  margin:0 auto;
+  object-fit: cover;
+  border-radius: 10px;
+} 
+
+
+
+.blur:hover .overlay-text, .blur:hover .overlay-texttwo {
+  opacity: 1;
+  pointer-events: none;
+  text-shadow: 
+    -1px -1px 0 #FBF5DE,  
+     1px -1px 0 #FBF5DE,
+    -1px  1px 0 #FBF5DE,
+     1px  1px 0 #FBF5DE;
+}
+
+
+
+.hinh:hover {
+  filter: blur(6px) opacity(10%);
+  transition: filter 0.3s ease;
+}
+
+.blur{
+  position: relative;
+
+}
+
+.overlay-text{
+  position: absolute;
+  color: #432819;
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  font-weight: bold;
+  top: 5%;
+  margin: auto;
+  text-align: left;
+}
+
+.overlay-texttwo{
+  position: absolute;
+  color: #432819;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  font-weight: 400;
+  top: 40%;
+  text-align: left;
+}
+
+
+label{
+  font: times;
+}
+
+
+
+input {
+  width: 90px;
+  text-align: center;
+  border: 2px solid #FBF5DE;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#order {
+  display: block;
+  color: #dd6209;
+  font-weight: bold;
+  height: 65px;
+  width: 770px;
+  border-radius:20px;
+  border: 7px #432819 solid;
+  background-color: #FBF5DE;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+#order:hover {
+  background-color: #432819;
+  color: #FBF5DE;
+
+}
+
+#order:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform:  translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+#cogiang {
+  position: absolute;
+  width: 250px;
+  top: 40%;
+  left: 55%;
+  z-index: 100;
+  animation: float 1.5s ease-in-out infinite;
+}

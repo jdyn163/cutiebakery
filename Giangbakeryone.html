@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Giang's bakery</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <header>
+        <audio id="bg-music" src="happy.mp3" loop></audio>
+        <button id="playMusicBtn">🎵 Bật nhạc nền</button>
+        <img id="cogiang" src="giangchibi.PNG">
+      </header>
+      <main >
+        <section id="menu" >
+          <article class="inline"> 
+            <div class="blur">
+              <img class="hinh" src="breadone.jpg">
+              <div class="overlay-text">Bánh Khoai Lang</div>
+              <div class="overlay-texttwo"> 🍰 Vỏ thì dẻo, nhân khoai lang ngọt nhẹ bên trong là thanh phô mai ăn siêu cuốn. 🍰 </div>
+            </div>
+            <br>
+            <form>
+              <label>Số Lượng: </label>
+              <input type="number" value="0" min="0" max="100">
+            </form>
+          </article>
+
+          <article class="inline"> 
+            <div class="blur">
+              <img class="hinh" src="breadtwo.jpg">
+              <div class="overlay-text">Bánh Mỳ Bơ Tỏi </div>
+              <div class="overlay-texttwo"> 🍞 Từng thớ bánh dài quyện với trà và những miếng đào còn nguyên vị giòn. 🍞 </div>
+            </div>
+            <br>
+            <form>
+              <label>Số Lượng: </label>
+              <input type="number" value="0" min="0" max="100">
+            </form>
+          </article>
+
+          <article class="inline"> 
+            <div class="blur">
+              <img class="hinh" src="breadthree.jpg">
+              <div class="overlay-text">Bánh Trung Thu Ngàn Lớp </div>
+              <div class="overlay-texttwo"> 🥮 Trộn trộn, nhào nhào, cán cán, nặn nặn. Và rồi em nó xinh quá không muốn mang nướng lun.  </div>
+            </div>
+            <br>
+            <form>
+              <label>Số Lượng: </label>
+              <input type="number" value="0" min="0" max="100">
+            </form>
+          </article>
+
+          <article class="inline"> 
+            <div class="blur">
+              <img class="hinh" src="breadfour.jpg">
+              <div class="overlay-text">Bánh Đào</div>
+              <div class="overlay-texttwo"> 🥧 Từng thớ bánh dài quyện với trà và những miếng đào còn nguyên vị giòn. 🥧 </div>
+            </div>
+            <br>
+            <form>
+              <label>Số Lượng: </label>
+              <input type="number" value="0" min="0" max="100">
+            </form>
+          </article>
+
+          <article class="inline"> 
+            <div class="blur">
+              <img class="hinh" src="breadfive.jpg">
+              <div class="overlay-text">Bánh Táo</div>
+              <div class="overlay-texttwo"> 🍩 Chiếc bánh men tự nhiên, từng thớ bánh cuộn táo tươi giòn có vị chua nhẹ. 🍩 </div>
+            </div>
+            <br>
+            <form>
+              <label>Số Lượng: </label>
+              <input type="number" value="0" min="0" max="100">
+            </form>
+          </article>
+
+          <article class="inline"> 
+            <div class="blur">
+              <img class="hinh" src="breadsix.jpg">
+              <div class="overlay-text">Shiopan truyền thống</div>
+              <div class="overlay-texttwo"> 🥐 Chiếc bánh giòn rụm, thấm với lớp bơ muối. Vỏ bánh thì giòn hoa muối thì mặn mặn. 🥐 </div>
+            </div>
+            <br>
+            <form>
+              <label>Số Lượng: </label>
+              <input type="number" value="0" min="0" max="100">
+            </form>
+          </article>
+        </section>
+        <input type="submit" id="order" value="❤️ Order ngay s'lun cho nóng bạn eiii! ❤️"></input>
+      </main>
+      
+      <script>
+        const music = document.getElementById('bg-music');
+        const button = document.getElementById('playMusicBtn');
+
+        button.addEventListener('click', () => {
+          music.play();
+          button.style.display = 'none'; // hide the button after clicked
+        });
+      </script>
+    </body>
+  </html>
+
